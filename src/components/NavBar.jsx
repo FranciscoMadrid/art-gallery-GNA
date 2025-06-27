@@ -128,12 +128,29 @@ export default function NavBar() {
                         animate={{ y: 0 }}
                         exit={{ y: -150 }}
                         transition={{ duration: 0.3, ease: 'easeInOut' }}
-                        className='md:hidden w-full bg-white border-b-2 z-240 p-4 flex flex-col gap-2 mt-[60px] border-t-1 fixed left-0'
+                        className='md:hidden text-xl w-full bg-white border-b-2 z-240 p-5 py-10 font-bold flex flex-col gap-5 mt-[60px] border-t-1 fixed left-0'
                     >
-                        <h1>Reservar</h1>
-                        <h1>Exhibiciones</h1>
-                        <h1>Galeria</h1>
-                        <h1>Ubicacion</h1>
+                        <span onClick={() => {
+                                document.getElementById('exhibicion')?.scrollIntoView({ behavior: 'smooth' });
+                                setShowNav(false);
+                            }}
+                            className="cursor-pointer">
+                            Exhibiciones
+                        </span>
+                        <span onClick={() => {
+                                document.getElementById('galeria')?.scrollIntoView({ behavior: 'smooth' });
+                                setShowNav(false);
+                            }}
+                            className="cursor-pointer">
+                            Galeria
+                        </span>
+                        <span onClick={() => {
+                                document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+                                setShowNav(false);
+                            }}
+                            className="cursor-pointer">
+                            Ubicacion
+                        </span>
                     </motion.div>
                 )}
             </AnimatePresence>

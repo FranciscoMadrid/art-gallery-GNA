@@ -106,7 +106,7 @@ return (
             </AnimatePresence>
         </section>
         
-        <section className='grid grid-cols-3 gap-4 w-[85vw] md:w-[80vw] xl:w-[70vw] py-10 mx-auto'>
+        <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-[85vw] md:w-[80vw] xl:w-[70vw] py-10 mx-auto'>
             <ItemCard image={ItemImageF} title='Efímera' subtitle='Carmen Moncada' onClick={setSelectedImage}/>
             <ItemCard image={ItemImageG} title='Peregrino' subtitle='Lucrecia Santos' onClick={setSelectedImage}/>
             <ItemCard image={ItemImageH} title='Valle Enegma' subtitle=' Miguel Ángel Ruiz Matute' onClick={setSelectedImage}/>
